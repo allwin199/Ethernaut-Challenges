@@ -1,0 +1,5 @@
+-   Flip function inside the Coinflip contract can be exploited.
+-   Attacker can deploy the Conflip Contract
+-   Then create a new contract called Attack(see Solution.sol)
+-   Since factor is deterministic, it can be exploited
+-   Block.number can be easily accessed
