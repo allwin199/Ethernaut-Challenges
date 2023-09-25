@@ -1,0 +1,9 @@
+```js
+await web3.eth.getStorageAt("contractAddress", 1, console.log);
+```
+
+-   By using `web3.eth` we can access all slots present in the blockchain.
+
+-   It's important to remember that marking a variable as private only prevents other contracts from accessing it. State variables marked as private and local variables are still publicly accessible.
+
+-   To ensure that data is private, it needs to be encrypted before being put onto the blockchain. In this scenario, the decryption key should never be sent on-chain, as it will then be visible to anyone who looks for it. zk-SNARKs provide a way to determine whether someone possesses a secret parameter, without ever having to reveal the parameter.
